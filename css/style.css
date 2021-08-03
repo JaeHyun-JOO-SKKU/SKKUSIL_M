@@ -112,6 +112,35 @@ a{
         background-color: white;
         text-align: center;
         padding-top: 70px;
+    }
+
+    .user_box h1{
         font-size: 30px;
+        margin: 7px auto;
+    }
+    .user_box h2{
+        font-size: 17px;
+        font-weight: 350;
+        margin: 10px auto;
+    }
+
+    .user_box button{
+        width: 80%;
+        height: 40px;
+        margin-top: 10px;
+        font-size: 13px;
+        border-radius: 0.3rem;
+    }
+
+    .user_box #my_lost{
+        background-color: rgb(64, 64, 255);
+        color: white;
+        border: 0;
+    }
+
+    .user_box #modi_profile{
+        background-color: white;
+        border: 2px rgb(141, 198, 63) solid;
+        margin-bottom: 40px;
     }
 }
