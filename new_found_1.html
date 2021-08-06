@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SKKUSIL_홈</title>
-    <link rel="stylesheet" type="text/css" href="./css//index.css">
+    <title>SKKUSIL_습득물 등록</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="https://kit.fontawesome.com/4b8f423cbe.js" crossorigin="anonymous"></script> <!--폰트 cdn-->
     <style>
         body{
-            background: url("imgs/SKKUbg.jpg") no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
+            background-color: white;
             background-size: cover;
             height: 100%;
-            overflow: hidden;
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    <div class="main_img">
-        <img src="./imgs/SKKUsilLogo_White.png" width="80%">
-    </div>
+    <header class="header">
+        <h2>습득물 등록</h2>
+    </header>
     <nav class="navbar"> <!--하단 네비게이션바-->
         <ul class="mobile_list"> <!--폰트(font awesome cdn 활용)-->
-            <li><a href="new.html"><i class="fa fa-plus"></i></a></li>
+            <li><a href="new.html"><i class="fa fa-plus" style="color: rgb(141, 198, 63);"></i></a></li>
             <li><a href="search.html"><i class="fa fa-search"></i></a></li>
             <li><a href="index.html"><i class="fa fa-home" id="home"></i></a></li>
             <li><a href="noti.html"><i class="fa fa-bell"></i></a></li>
             <li><a href="login.html"><i class="fa fa-user"></i></a></li>
         </ul>
     </nav>
+    <div class="new_back"> <!-- 뒤로가기 버튼 -->
+        <div class="back">
+            <button onclick="history.back()"><i class="fa fa-chevron-left"></i></button>
+        </div>
+    </div>
 </body>
 </html>

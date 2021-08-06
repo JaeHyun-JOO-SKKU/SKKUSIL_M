@@ -1,10 +1,6 @@
-/*전체 적용*/
-a{
-    color: black;
-}
+/*데스크탑 화면용 반응형 디자인 (나중에..!)*/
 
 
-/*데스크탑 화면용 반응형 디자인*/
 
 
 /*모바일 화면용 반응형 디자인*/
@@ -20,6 +16,30 @@ a{
         overflow: hidden;
     }
 */
+
+/*전체 페이지 공통*/
+    a{
+        color: black;
+    }
+
+
+/* 따로 나눌 것들 */
+    .back{
+    width: 10%;
+    z-index: 999;
+    }
+    .back button{
+        border: 0;
+        background-color:rgba(240, 248, 255, 0);
+        padding: 20px 0px 20px 10px;
+
+    }
+
+    .back i{
+        font-size: 20px;
+        background-color:rgba(240, 248, 255, 0);
+    }
+
     .main_img{
         text-align: center;
         margin-top: 20%;
@@ -43,6 +63,7 @@ a{
         background-color: white;
         margin: 0;
         vertical-align: bottom;
+        border-top: rgb(187, 187, 187) 1px solid;
     }
 
     .mobile_list i {
@@ -93,6 +114,8 @@ a{
         color: white;
         border: 0px;
     }
+
+/* 유저 -> 개인화면 */
 
     .user_info{
         margin: 70px auto -55px;
@@ -167,4 +190,62 @@ a{
         font-size: 17px;
         padding-right: 15px;
     }
+
+    /* 시동 페이지*/
+
+    .run_logo{
+        margin-top: 30%;
+        text-align: center;
+    }
+
+    .run_logo img{
+        width: 80%;
+    }
+
+    /* 신규 등록 페이지 */
+    .header{
+        padding: 30px 0% 10px;
+        text-align: center;
+        border-bottom: 1px gray solid;
+        position:fixed;
+        width: 100%;
+        background-color: white;
+        margin: 0;
+        top: 0;
+    }
+    .header h2{
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    /* 등록 진입 선택 구분 */
+    .lost_enterance{
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    .lost_enterance h3{
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    .found_enterance{
+        text-align: center;
+    }
+
+    .found_enterance h3{
+        margin-top: 5px;
+        margin-bottom: 80px;
+    }
+
+    .new_img img{
+        width: 70%;
+        border: 4px rgb(141, 198, 63) solid;
+        border-radius: 1.5rem;
+    }
+
+    /* 분실물 등록 */  
+
+
 }

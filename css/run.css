@@ -1,0 +1,18 @@
+@media only screen and (max-width: 800px){
+    /* 1. 전체 페이지 공통 요소 */
+
+    /* 2. 전체 공통 요소는 아니지만, 다른 페이지에서도 쓰이는 요소 */
+        /* 스꾸실 로고 */
+
+    /* 3. only 이 페이지에서만 쓰이는 요소 */
+    body{
+        background-color: rgb(141, 198, 63);
+    }
+    .run_logo{
+        margin-top: 30%;
+        text-align: center;
+    }
+    .run_logo img{
+        width: 80%;
+    }    
+}

@@ -1,0 +1,76 @@
+@media only screen and (max-width: 800px){
+/* 1. 전체 페이지 공통 요소 */
+    /*
+    body{
+        background: url("imgs/SKKUbg.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .back{
+    width: 10%;
+    z-index: 999;
+    }
+    .back button{
+        border: 0;
+        background-color:rgba(240, 248, 255, 0);
+        padding: 20px 0px 20px 10px;
+
+    }
+
+    .back i{
+    font-size: 20px;
+    background-color:rgba(240, 248, 255, 0);
+    }
+    */
+    /* 링크 색 지우기 */    
+    a{
+        color: black;
+    }
+    /* 하단 네비게이션 바 */
+    .mobile_list{
+        align-content: center;
+        display: inline-block;
+        color: black;
+        position: fixed;
+        bottom:0;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        list-style: none;
+        padding: 0%;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        background-color: white;
+        margin: 0;
+        vertical-align: bottom;
+        border-top: rgb(187, 187, 187) 1px solid;
+    }
+
+    .mobile_list i {
+        font-size: 25px;
+    }
+
+    #home{
+        background-color: rgb(141, 198, 63);
+        color: white;
+        padding: 5px 5px;
+        border-radius: 4rem;
+    }
+
+/* 2. 전체 공통 요소는 아니지만, 다른 페이지에서도 쓰이는 요소 */
+    /* 스꾸실 로고 */
+    .main_img{
+        text-align: center;
+        margin-top: 20%;
+    }
+
+/* 3. only 이 페이지에서만 쓰이는 요소 */
+
+}

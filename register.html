@@ -18,7 +18,7 @@
             <li><a href="search.html"><i class="fa fa-search"></i></a></li>
             <li><a href="index.html"><i class="fa fa-home" id="home"></i></a></li>
             <li><a href="noti.html"><i class="fa fa-bell"></i></a></li>
-            <li><a href="login.html"><i class="fa fa-user"></i></a></li>
+            <li><a href="login.html"><i class="fa fa-user" style="color: rgb(141, 198, 63);"></i></a></li>
         </ul>
     </nav>
     <div class="logo">
@@ -35,26 +35,22 @@
                 <span class="box int_id">
                     <input type="text" id="id" class="int" maxlength="20">
                 </span>
-                <span class="error_next_box"></span>
             </div>
             <!-- PW1 -->
             <div>
                 <h3 class="join_title"><label for="pswd1">비밀번호</label></h3>
                 <span class="box int_pass">
                     <input type="text" id="pswd1" class="int" maxlength="20">
-                    <span id="alertTxt">사용불가</span>
                     <img src="./imgs/register/m_icon_pass.png" id="pswd1_img1" class="pswdImg">
                 </span>
-                <span class="error_next_box"></span>
             </div>
-            <!-- PW2 -->
+            <!-- PW Confirm -->
             <div>
                 <h3 class="join_title"><label for="pswd2">비밀번호 재확인</label></h3>
                 <span class="box int_pass_check">
                     <input type="text" id="pswd2" class="int" maxlength="20">
                     <img src="./imgs/register/m_icon_check_disable.png" id="pswd2_img1" class="pswdImg">
                 </span>
-                <span class="error_next_box"></span>
             </div>
             <!-- NAME -->
             <div>
@@ -62,29 +58,28 @@
                 <span class="box int_name">
                     <input type="text" id="name" class="int" maxlength="20">
                 </span>
-                <span class="error_next_box"></span>
             </div>
+            <!-- Student Number-->
             <div>
-                <h3 class="join_title"><label for="name">학번</label></h3>
+                <h3 class="join_title"><label for="std_number">학번</label></h3>
                 <span class="box int_name">
                     <input type="text" id="name" class="int" maxlength="20">
                 </span>
-                <span class="error_next_box"></span>
             </div>
-            <!-- BIRTH -->
+            <!-- E-mail -->
             <div>
-                <h3 class="join_title"><label for="yy">킹고 이메일 인증</label></h3>
-                <div id="bir_wrap">
-                    <!-- BIRTH_YY -->
-                    <div id="bir_yy">
+                <h3 class="join_title"><label for="Email">킹고 이메일 인증</label></h3>
+                <div id="Email_wrap">
+                    <!-- E-mail ID -->
+                    <div id="Email_ID">
                         <span class="box">
-                            <input type="text" id="yy" class="int" maxlength="20" placeholder="이메일 앞 주소">
+                            <input type="text" id="ID" class="int" maxlength="20" placeholder="이메일 앞 주소">
                         </span>
                     </div>
-                    <!-- BIRTH_MM -->
-                    <div id="bir_mm">
+                    <!-- E-mail Type -->
+                    <div id="Email_type">
                         <span class="box">
-                            <select id="mm" class="sel">
+                            <select id="TYPE" class="sel">
                                 <option>선택</option>
                                 <option value="01">@ skku.edu</option>
                                 <option value="02">@ g.skku.edu</option>
@@ -92,27 +87,24 @@
                         </span>
                     </div>
                 </div>
-                <span class="error_next_box"></span>    
             </div>
-            <!-- GENDER -->
+            <!-- Campus -->
             <div>
-                <h3 class="join_title"><label for="gender">원전공 캠퍼스</label></h3>
-                <span class="box gender_code">
-                    <select id="gender" class="sel">
+                <h3 class="join_title"><label for="campus">원전공 캠퍼스</label></h3>
+                <span class="box campus_code">
+                    <select id="std_campus" class="sel">
                         <option>선택</option>
                         <option value="M">명륜 캠퍼스</option>
-                        <option value="F">율전 캠퍼스</option>
+                        <option value="Y">율전 캠퍼스</option>
                     </select>                            
                 </span>
-                <span class="error_next_box">필수 정보입니다.</span>
             </div>
-            <!-- MOBILE -->
+            <!-- Phone Number -->
             <div>
                 <h3 class="join_title"><label for="phoneNo">휴대전화</label></h3>
                 <span class="box int_mobile">
                     <input type="tel" id="mobile" class="int" maxlength="16" placeholder="전화번호 입력">
-                </span>
-                <span class="error_next_box"></span>    
+                </span>  
             </div>
             <!-- JOIN BTN-->
             <div class="btn_area">
