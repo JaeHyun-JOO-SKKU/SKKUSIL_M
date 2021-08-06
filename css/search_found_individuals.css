@@ -71,43 +71,46 @@
         }
     
     /* 3. only 이 페이지에서만 쓰이는 요소 */
+        /*개인습득물 전체 틀*/
         .indi_list{
-            width: 340px;
+            width: 100%;
             overflow: hidden;
             align-items: center;
             margin:auto;
         }
+        /*개인습득물 - 개별 아이템*/
         .indi_list ul li{
             align-items: center;
             list-style: none;
             float: left;
-            width: 30%;
-            height: 100px;
-            margin-left: 7px;
-            margin-bottom: 60px;
+            width: 28%;
+            margin-left: 4%;
+            margin-bottom: 4%;
             border-radius: 10px;
         }
         .indi_list ul li div{
             display: block;
         }
-        
-        .indiItem_info{
+        /*개별 아이템 정보*/
+        .indiItem-info{
             text-align: left;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
+            /*아이템명, 분실(습득)위치*/
         .indiItem_info p{
             font-size: 12px;
             font-weight: 600;
         }
+            /*아이템 카테고리 (전자기기or서적류..)*/
         .indiItem_info .item_sort{
             margin-top: 3px;
             font-size: 12px;
             font-weight: 900;
             color: #5a6674;
         }
-        
+        /*검색 옵션 search_option (개인습득물 or 학생지원팀)*/
         .search_option{
             margin: 0 auto 15px;
             background-color: rgba(0, 0, 0, 0.05);
@@ -115,7 +118,7 @@
             width: 85%;
             height: 20px;
             border-radius: 30px;
-            padding: 10px;
+            padding: 3%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -123,22 +126,24 @@
         }
         .search_option button{
             width: fit-content;
-            height: 30px;
+            height: 150%;
             border:0;
-            padding:0 40px 0;
+            padding:0 12% 0;
             font-size: 14px;
             font-weight: bolder;
         }
         .Offi_btn{
             color: rgba(0, 0, 0, .5);
         }
+        
+        /*선택된 버튼 강조 표시(개인습득물 버튼)*/
         .circle_btn{
-            padding: 5px;
             background: #fff;
             border-radius: 30px;
             font-weight: bolder;
             color: rgb(122, 175, 49);
         }
+        /*검색창*/
         .search_container{
             margin: 20px auto 15px;
             background-color: rgba(0, 0, 0, 0.05);
@@ -146,7 +151,7 @@
             width: 85%;
             height: 20px;
             border-radius: 30px;
-            padding: 10px;
+            padding: 3%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -168,7 +173,7 @@
         .search_btn{
             background-color: #fff;
             border: 1px solid #000;
-            height: 30px;
+            height: 150%;
             margin: 5px;
             width: 25%;
             font-size: 16px;
@@ -184,4 +189,3 @@
         }
 
 }
-

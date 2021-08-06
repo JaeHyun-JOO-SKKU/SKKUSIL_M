@@ -60,6 +60,7 @@
 
     /* 3. only 이 페이지에서만 쓰이는 요소 */
         /* 검색창 */
+            /*검색창 틀*/
         .search_container{
             margin: 80.2px auto 15px;
             background-color: rgba(0, 0, 0, 0.05);
@@ -73,6 +74,7 @@
             align-items: center;
             cursor: pointer;
         }
+            /*검색 텍스트 입력 부분*/
         .search_text {
             margin-left: 10px;
             font-size: 16px;
@@ -84,6 +86,7 @@
             appearance: none;
             outline: none;
         }
+            /*검색 버튼*/
         .search_btn{
             background-color: #fff;
             border: 1px solid #000;
@@ -95,32 +98,38 @@
             border-radius: 30px;
         }
 
-        /* 각 게시판 제목, 설명 */
+        /* 게시판 */
+            /*게시판 전체 틀*/
         .content_container{
             margin-top:20px;
             text-align: center;
         }
+            /*게시판 종류(습득물 or 분실물)*/
         .content_container h3{
             color:#000;
             font-weight: bold;
             margin-bottom: 3px;
         }
+            /*게시판 설명*/
         .content_container p{
             font-size: 14px;
         }
+            /*습득물 게시판*/
         .content_container .found_info {
             padding-top: 0px;
             margin-bottom:15px;
         }
+            /*분실물 게시판*/
         .content_container .lost_info {
             padding-top: 0px;
             margin-bottom:80px;
         }
-
+            /*게시판 - 텍스트 설명 부분*/
         .found_text, .lost_text{
             width:80%;
             margin: auto;
         }
+            /*게시판 - 이미지 부분*/
         .found_img, .lost_img{
             text-align: center;
         }

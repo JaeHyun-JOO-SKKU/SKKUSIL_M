@@ -65,28 +65,7 @@
         }
     
     /* 3. only 이 페이지에서만 쓰이는 요소 */
-        body{
-            height: 100%;
-        }
-        .new_lost{
-            margin: 40px auto 20px auto;
-            width: 80%;
-        }
-
-        .campus_sel{
-            border-bottom: grey 1px solid;
-        }
-
-        .lost_title{
-            float: left;
-            height: 50px;
-        }
-
-        .lost_sel{
-            float: right;
-            height: 50px;
-        }
-
+        /* 헤더 아래 설명 부분 */
         .new_exp{
             width: 80%;
             margin: 0 auto 0 auto;
@@ -100,61 +79,82 @@
         }
 
         .new_exp p{
-            margin: 10px auto 10px auto;
+            margin: 10px auto 30px auto;
+            font-size: 15px;
+            
+        }
+
+        /* 이미지 삽입 미리보기 예시 */
+        .new_insert_img{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+
+        img{
+            width: 50%;
+            border: grey 1px solid;
+        }
+
+        /* 이미지 삽입 버튼 */
+        .new_img_button{
+            width: 80%;
+            text-align: center;
+            margin: 0 auto 30px auto;
+        }
+
+        .new_img_button button{
+            width: 40%;
+            height: 30px;
+            color: white;
+            background-color: rgb(141, 198, 63);
+            border: 0;
+            border-radius: 0.5rem;
             font-size: 15px;
         }
 
-        /* 카테고리 선택 틀 */
-        .new_category{
-            text-align: center;
-            width: 80%;
-            margin: 20px auto;
-            height: 100%;
-        }
-
-        .campus::after{
-            content: "";
-            clear: both;
-            display: block;
-        }
-
-        .campus{
-            border-bottom: rgb(141, 198, 63) 1px solid;
-            margin-top: 30px;
-        }
 
 
-        .new_theme{
-            float: left;
-            clear: left;
-            margin: 24px auto 0;
-            font-size: 20px;
-        }
-        .new_sel{
-            float: right;
-            clear: right;
-            margin: 20px auto;
-            background-color: white;
-        }
-        .campus_opt{
-            width: 80px;
-            height: 26px;
-            background-color: white;
-        }
-        .new_detail{
-            width: 80%;
+        /* 게시물 제목 */
+        .new_title_input{
             text-align: center;
             margin: auto;
-        }
-        
-        .new_img img{
             width: 80%;
         }
 
-        .new_next{
+        .new_title_input input{
+            width: 100%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            padding-bottom: 5px;
+            font-size: 15px;
+        }
+
+        /* 상세정보 + 주의사항 */
+        .new_content_input{
+            text-align: center;
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        .new_content_input textarea{
+            width: 100%;
+            height: 200px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            padding-bottom: 5px;
+            font-size: 15px;
+            margin-bottom: 15px;
+            border-bottom: grey 1px solid;
+        }
+
+        /* 등록 완료 버튼 */
+        .new_complete{
             margin-right: 10%;
             float: right;
-            width: 80px;
+            width: 100px;
             height: 40px;
             background-color: rgba(38, 51, 236, 0.801);
             color: white;

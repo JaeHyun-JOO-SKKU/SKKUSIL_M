@@ -1,0 +1,156 @@
+@media only screen and (max-width: 800px){
+    /* 1. 전체 페이지 공통 요소 */
+        /* 링크 색 지우기 */
+        a{
+            color: black;
+        }
+        /* 하단 네비게이션 바 */
+        .mobile_list{
+            align-content: center;
+            display: inline-block;
+            color: black;
+            position: fixed;
+            bottom:0;
+            left: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            list-style: none;
+            padding: 0%;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            background-color: white;
+            margin: 0;
+            vertical-align: bottom;
+            border-top: rgb(187, 187, 187) 1px solid;
+        }
+    
+        .mobile_list i {
+            font-size: 25px;
+        }
+    
+        #home{
+            background-color: rgb(141, 198, 63);
+            color: white;
+            padding: 5px 5px;
+            border-radius: 4rem;
+        }
+    
+    /* 2. 전체 공통 요소는 아니지만, 다른 페이지에서도 쓰이는 요소 */
+        
+        .header{
+            padding: 30px 0% 10px;
+            text-align: center;
+            border-bottom: 1px gray solid;
+            position:fixed;
+            width: 100%;
+            background-color: white;
+            margin: 0;
+            top: 0;
+        }
+        .header h2{
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0;
+        }
+        .back{
+            width: 10%;
+            z-index: 999;
+        }
+        .back button{
+            border: 0;
+            background-color:rgba(240, 248, 255, 0);
+            padding: 20px 0px 20px 10px;
+        }
+    
+    /* 3. only 이 페이지에서만 쓰이는 요소 */
+        /* 헤더 아래 설명 */
+        .new_lost{
+            margin: 40px auto 20px auto;
+            width: 80%;
+        }
+
+        .campus_sel{
+            border-bottom: grey 1px solid;
+        }
+
+        .lost_title{
+            float: left;
+            height: 50px;
+        }
+
+        .lost_sel{
+            float: right;
+            height: 50px;
+        }
+
+        .new_exp{
+            width: 80%;
+            margin: 0 auto 0 auto;
+            text-align: center;
+        }
+
+        .new_exp h2{
+            margin: 20px auto 5px auto;
+            width: fit-content;
+            border-bottom: rgb(141, 198, 63) 1px solid;
+        }
+
+        .new_exp p{
+            margin: 10px auto 10px auto;
+            font-size: 15px;
+        }
+
+        /* 카테고리 선택 틀 */
+        .new_category{
+            text-align: center;
+            width: 80%;
+            margin: 20px auto;
+            height: 100%;
+        }
+
+        .campus::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .campus{
+            border-bottom: rgb(141, 198, 63) 1px solid;
+            margin-top: 30px;
+        }
+
+
+        .new_theme{
+            float: left;
+            clear: left;
+            margin: 24px auto 0;
+            font-size: 20px;
+        }
+        .new_sel{
+            float: right;
+            clear: right;
+            margin: 20px auto;
+            background-color: white;
+        }
+        .campus_opt{
+            width: 80px;
+            height: 26px;
+            background-color: white;
+        }
+
+        /* 다음 버튼 */
+        .new_next{
+            margin-right: 10%;
+            float: right;
+            width: 80px;
+            height: 40px;
+            background-color: rgba(38, 51, 236, 0.801);
+            color: white;
+            border: 0;
+            border-radius: 0.2rem;
+            font-size: 20px;
+            margin-bottom: 80px;
+        }
+    }
