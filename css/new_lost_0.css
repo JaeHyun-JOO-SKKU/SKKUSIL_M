@@ -54,17 +54,26 @@
             font-weight: 400;
             margin: 0;
         }
+
         .back{
+            position: fixed;
             width: 10%;
-            z-index: 999;
+            z-index: 100;
         }
+
         .back button{
             border: 0;
+            padding: 3px 10px 10px 10px;
+            background-color: white;
+        }
+
+        .back i{
+            font-size: 20px;
             background-color:rgba(240, 248, 255, 0);
-            padding: 20px 0px 20px 10px;
         }
     
     /* 3. only 이 페이지에서만 쓰이는 요소 */
+        
         /* 헤더 아래 설명 */
         .new_lost{
             margin: 40px auto 20px auto;
@@ -92,7 +101,7 @@
         }
 
         .new_exp h2{
-            margin: 20px auto 5px auto;
+            margin: 80px auto 5px auto;
             width: fit-content;
             border-bottom: rgb(141, 198, 63) 1px solid;
         }

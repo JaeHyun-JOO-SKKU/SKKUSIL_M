@@ -59,49 +59,12 @@
         }
 
     /* 3. only 이 페이지에서만 쓰이는 요소 */
-        /* 검색창 */
-            /*검색창 틀*/
-        .search_container{
-            margin: 80.2px auto 15px;
-            background-color: rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(0, 0, 0, .2);
-            width: 80%;
-            height: 20px;
-            border-radius: 30px;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-            /*검색 텍스트 입력 부분*/
-        .search_text {
-            margin-left: 10px;
-            font-size: 16px;
-            background: none;
-            color: #5a6674;
-            width: 100%;
-            height: auto;
-            border: none;
-            appearance: none;
-            outline: none;
-        }
-            /*검색 버튼*/
-        .search_btn{
-            background-color: #fff;
-            border: 1px solid #000;
-            height: 30px;
-            margin: 0;
-            width: 25%;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 30px;
-        }
+
 
         /* 게시판 */
             /*게시판 전체 틀*/
         .content_container{
-            margin-top:20px;
+            margin-top:80px;
             text-align: center;
         }
             /*게시판 종류(습득물 or 분실물)*/

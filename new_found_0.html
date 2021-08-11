@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SKKUSIL_습득물 등록</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>SKKUSIL_분실물 등록</title>
+    <link rel="stylesheet" type="text/css" href="./css/new_lost_0.css">
     <script src="https://kit.fontawesome.com/4b8f423cbe.js" crossorigin="anonymous"></script> <!--폰트 cdn-->
     <style>
         body{
@@ -17,7 +17,11 @@
     </style>
 </head>
 <body>
-    <header class="header">
+    <header class="header"> 
+        <!--뒤로가기 버튼-->
+        <div class="back">
+            <button onclick="history.back()"><i class="fa fa-chevron-left"></i></button>
+        </div>
         <h2>습득물 등록</h2>
     </header>
     <nav class="navbar"> <!--하단 네비게이션바-->
@@ -29,10 +33,74 @@
             <li><a href="login.html"><i class="fa fa-user"></i></a></li>
         </ul>
     </nav>
-    <div class="new_back"> <!-- 뒤로가기 버튼 -->
-        <div class="back">
-            <button onclick="history.back()"><i class="fa fa-chevron-left"></i></button>
+    <div class="new_exp">
+        <h2>카테고리 선택</h2>
+        <p>카테고리에 맞게 습득물을 등록하고, <br> 분실물을 더 쉽게 찾을 수 있도록 도와주세요!</p>
+    </div>
+    <div class="new_category">
+        <div class="campus">
+            <div class="new_theme">습득 캠퍼스</div>
+            <div class="new_sel">
+                <select class="campus_opt">
+                    <option>선택</option>
+                    <option value="M">명륜 캠퍼스</option>
+                    <option value="Y">율전 캠퍼스</option>
+                </select>
+            </div>
+        </div>
+        <div class="campus">
+            <div class="new_theme">습득 건물</div>
+            <div class="new_sel">
+                <select class="campus_opt">
+                    <option>선택</option>
+                    <option value="M">A</option>
+                    <option value="Y">B</option>
+                    <option value="Y">C</option>
+                    <option value="Y">D</option>
+                    <option value="Y">E</option>
+                </select>
+            </div>
+        </div>
+        <div class="campus">
+            <div class="new_theme">물품 종류</div>
+            <div class="new_sel">
+                <select class="campus_opt">
+                    <option>선택</option>
+                    <option value="M">A</option>
+                    <option value="Y">B</option>
+                    <option value="Y">C</option>
+                    <option value="Y">D</option>
+                    <option value="Y">E</option>
+                </select>
+            </div>
+        </div>
+        <div class="campus">
+            <div class="new_theme">물품 색상</div>
+            <div class="new_sel">
+                <select class="campus_opt">
+                    <option>선택</option>
+                    <option value="M">A</option>
+                    <option value="Y">B</option>
+                    <option value="Y">C</option>
+                    <option value="Y">D</option>
+                    <option value="Y">E</option>
+                </select>
+            </div>
+        </div>
+        <div class="campus">
+            <div class="new_theme">습득 일자</div>
+            <div class="new_sel">
+                <select class="campus_opt">
+                    <option>선택</option>
+                    <option value="M">A</option>
+                    <option value="Y">B</option>
+                    <option value="Y">C</option>
+                    <option value="Y">D</option>
+                    <option value="Y">E</option>
+                </select>
+            </div>
         </div>
     </div>
+    <a href="./new_found_1.html"><button class="new_next"> 다음 </button></a>
 </body>
 </html>

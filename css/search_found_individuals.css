@@ -3,6 +3,7 @@
         /* 링크 색 지우기 */    
         a{
             color: black;
+            text-decoration-line: none;
         }
         /* 하단 네비게이션 바 */
         .mobile_list{
@@ -40,13 +41,31 @@
     /* 2. 전체 공통 요소는 아니지만, 다른 페이지에서도 쓰이는 요소 */
         /* 스꾸실 로고 */
         .back{
+            position: fixed;
             width: 10%;
+            z-index: 100;
         }
 
         .back button{
             border: 0;
-            background-color:rgba(240, 248, 255, 0);
-            padding: 20px 0px 20px 10px;
+            padding: 3px 10px 10px 10px;
+            background-color: white;
+        }
+
+        .filter{
+            right: 20px;
+            top: 27px;
+            position: fixed;
+            width: 10%;
+            z-index: 100;
+        }
+
+        .filter button{
+            border: 0;
+            padding: 7px;
+            background-color: white;
+            color: rgb(122, 175, 49);
+            font-size: 15px;
         }
 
         .back i{
@@ -71,45 +90,75 @@
         }
     
     /* 3. only 이 페이지에서만 쓰이는 요소 */
-        /*개인습득물 전체 틀*/
+        body{
+            padding-top: 60px;
+        }
+        /* 리스트 스크롤 틀 */
+        .indi_item{
+            margin-bottom: 80px;
+        }
+
         .indi_list{
-            width: 100%;
-            overflow: hidden;
-            align-items: center;
-            margin:auto;
+            width: 90%;
+            margin: auto;
+            padding: 5px;
+            border: rgb(189, 189, 189) 1px solid;
+            border-radius: 0.5rem;
+            margin-bottom: 10px;
         }
-        /*개인습득물 - 개별 아이템*/
-        .indi_list ul li{
-            align-items: center;
-            list-style: none;
-            float: left;
-            width: 28%;
-            margin-left: 4%;
-            margin-bottom: 4%;
-            border-radius: 10px;
-        }
-        .indi_list ul li div{
+
+        .indi_list::after{
+            content: "";
+            clear: both;
             display: block;
         }
-        /*개별 아이템 정보*/
-        .indiItem-info{
-            text-align: left;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+
+        /** item 목록 **/
+        .indi_list li{
+            list-style-type: none;
         }
-            /*아이템명, 분실(습득)위치*/
-        .indiItem_info p{
-            font-size: 12px;
-            font-weight: 600;
+
+        /* 이미지 사이즈 설정 : 너비 90% / 높이 300px 고정 / 나머지는 hidden으로 자르기*/
+        .indi_list li img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 0.5rem;
         }
-            /*아이템 카테고리 (전자기기or서적류..)*/
-        .indiItem_info .item_sort{
-            margin-top: 3px;
-            font-size: 12px;
-            font-weight: 900;
+
+        /* 분실물 대표정보 표시 */
+        .indItem-name{
+            float: left;
+            clear: left;
+            margin: 0 auto 0;
+            font-size: 18px;
+            font-weight:bold;
+        }
+
+        .indItem-date{
+            float: right;
+            clear: right;
+            margin: 0 auto;
+            font-size: 15px;
+            font-weight: 300;
             color: #5a6674;
         }
+
+        .indItem-loca{
+            font-size: 15px;
+        }
+
+        .indItem-sort{
+            padding-right: 5px;
+            border-right: 1px #5a6674 solid;
+            font-size: 15px;
+        }
+
+        .indItem-color{
+            padding-left: 10px;
+            font-size: 15px;
+        }
+
         /*검색 옵션 search_option (개인습득물 or 학생지원팀)*/
         .search_option{
             margin: 0 auto 15px;

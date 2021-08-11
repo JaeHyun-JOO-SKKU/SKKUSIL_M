@@ -9,13 +9,17 @@
     <script src="https://kit.fontawesome.com/4b8f423cbe.js" crossorigin="anonymous"></script> <!--폰트 cdn-->
 </head>
 <body>
-    <!--뒤로가기 버튼-->
-    <div class="back">
-        <button onclick="history.back()"><i class="fa fa-chevron-left"></i></button>
-    </div>
+
     <!--header-->
     <div class="header">
+        <!--뒤로가기 버튼-->
+        <div class="back">
+            <button onclick="history.back()"><i class="fa fa-chevron-left"></i></button>
+        </div>
         <h2>분실물 게시판</h2>
+        <div class="filter">
+            <a href="./filter.html"><button>Filter</button></a>
+        </div>
     </div>
     <!--검색창 / search_container -->
     <div class="search_container">
@@ -28,77 +32,58 @@
         <button type="submit" class="Offi_btn" onClick="location.href='search_found_studentaid.html'">학생지원팀</button>
     </div>
     <!--개인습득물 전체 틀 indi_list-->
-    <div class="indi_list">
-        <ul>
+    <div class="indi_item">
+        <a href="./item_detail.html"><ul class="indi_list">
             <!--개인습득물 - 개별 아이템 indiItem-->
             <li>
-                <div class="indiItem_img">
-                    <img src="imgs/ex4.jpeg" alt="ex_img" style="width: 100%; height:100px; border-radius: 10px;">
+                <div class="indItem_img">
+                    <img src="imgs/ex4.jpeg" alt="ex_img">
                 </div>
-                <div class="indiItem-info">
-                    <p>전자담배</p>
-                    <p>[명륜 / 경영관]</p>
-                    <div class="item-sort">전자기기</div>
+                <div class="indItem-info">
+                    <span class="indItem-name"> 멋쟁이 뿔테 안경 </span>
+                    <span class="indItem-date"> 2021.07.20 </span>
+                    <br>
+                    <br>
+                    <div class="indItem-loca"> [명륜 / 경영관]</div>
+                    <span class="indItem-sort"> 전자기기 </span>
+                    <span class="indItem-color"> 검은색 </span>
                 </div>
             </li>
+        </ul></a>
+        <a href=""><ul class="indi_list">
             <!--개인습득물 - 개별 아이템 indiItem-->
             <li>
-                <div class="indiItem_img">
-                    <img src="imgs/ex5.jpeg" alt="ex_img" style="width: 100%; height:100px; border-radius: 10px;">
+                <div class="indItem_img">
+                    <img src="imgs/ex3.jpeg" alt="ex_img">
                 </div>
-                <div class="indiItem-info">
-                    <p>회계원리 전공책</p>
-                    <p>[명륜 / 중앙학술정보관]</p>
-                    <div class="item-sort">서적류</div>
+                <div class="indItem-info">
+                    <span class="indItem-name"> 멋쟁이 무선마우스 </span>
+                    <span class="indItem-date"> 2021.07.13 </span>
+                    <br>
+                    <br>
+                    <div class="indItem-loca"> [율전 / 삼성디지털도서관]</div>
+                    <span class="indItem-sort"> 전자기기 </span>
+                    <span class="indItem-color"> 회색 </span>
                 </div>
             </li>
+        </ul></a>
+        <a href=""><ul class="indi_list">
             <!--개인습득물 - 개별 아이템 indiItem-->
             <li>
-                <div class="indiItem_img">
-                    <img src="imgs/ex6.jpeg" alt="ex_img" style="width: 100%; height:100px; border-radius: 10px;">
+                <div class="indItem_img">
+                    <img src="imgs/ex6.jpeg" alt="ex_img">
                 </div>
-                <div class="indiItem-info">
-                    <p>블루투스 마우스</p>
-                    <p>[율전 / 삼성학술정보관]</p>
-                    <div class="item_sort">전자기기</div>
-                </div>
-            </li>
-        </ul>
-        <ul>
-            <!--개인습득물 - 개별 아이템 indiItem-->
-            <li>
-                <div class="indiItem_img">
-                    <img src="imgs/ex7.jpeg" alt="ex_img" style="width: 100%; height:100px; border-radius: 10px;">
-                </div>
-                <div class="indiItem-info">
-                    <p>전자담배</p>
-                    <p>[명륜 / 경영관]</p>
-                    <div class="item-sort">전자기기</div>
+                <div class="indItem-info">
+                    <span class="indItem-name"> 멋쟁이 노트북 </span>
+                    <span class="indItem-date"> 2021.07.10 </span>
+                    <br>
+                    <br>
+                    <div class="indItem-loca"> [명륜 / 중앙학술정보관]</div>
+                    <span class="indItem-sort"> 전자기기 </span>
+                    <span class="indItem-color"> 회색 </span>
                 </div>
             </li>
-            <!--개인습득물 - 개별 아이템 indiItem-->
-            <li>
-                <div class="indiItem_img">
-                    <img src="imgs/ex8.jpeg" alt="ex_img" style="width: 100%; height:100px; border-radius: 10px;">
-                </div>
-                <div class="indiItem-info">
-                    <p>회계원리 전공책</p>
-                    <p>[명륜 / 중앙학술정보관]</p>
-                    <div class="item-sort">서적류</div>
-                </div>
-            </li>
-            <!--개인습득물 - 개별 아이템 indiItem-->
-            <li>
-                <div class="indiItem_img">
-                    <img src="imgs/ex5.jpeg" alt="ex_img" style="width: 100%; height:100px; border-radius: 10px;">
-                </div>
-                <div class="indiItem-info">
-                    <p>블루투스 스피커</p>
-                    <p>[율전 / 삼성학술정보관]</p>
-                    <div class="item-sort">서적류</div>
-                </div>
-            </li>
-        </ul>
+        </ul></a>
     </div>
 
     <nav class="navbar"> <!--하단 네비게이션바-->
