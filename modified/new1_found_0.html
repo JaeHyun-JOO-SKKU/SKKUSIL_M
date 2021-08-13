@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKKUSIL_분실물 등록</title>
+    <link rel="stylesheet" type="text/css" href="../modified/new1_found_0.css">
+    <script src="https://kit.fontawesome.com/4b8f423cbe.js" crossorigin="anonymous"></script> <!--폰트 cdn-->
+    <style>
+        body{
+            background-color: white;
+            background-size: cover;
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header"> 
+        <!--뒤로가기 버튼-->
+        <div class="back">
+            <button onclick="history.back()"><i class="fa fa-chevron-left"></i></button>
+        </div>
+        <h2>분실물 등록</h2>
+    </header>
+    <nav class="navbar"> <!--하단 네비게이션바-->
+        <ul class="mobile_list"> <!--폰트(font awesome cdn 활용)-->
+            <li><a href="new.html"><i class="fa fa-plus" style="color: rgb(141, 198, 63);"></i></a></li>
+            <li><a href="search.html"><i class="fa fa-search"></i></a></li>
+            <li><a href="index.html"><i class="fa fa-home" id="home"></i></a></li>
+            <li><a href="noti.html"><i class="fa fa-bell"></i></a></li>
+            <li><a href="login.html"><i class="fa fa-user"></i></a></li>
+        </ul>
+    </nav>
+    <div class="new_exp">
+        <h2>카테고리 선택</h2>
+        <p>카테고리에 맞게 분실물을 등록하고, <br> 비슷한 습득물이 올라오면 알림으로 받아보세요!</p>
+    </div>
+    <div class="container">
+        <h2>캠퍼스 선택</h2>
+        <div class="select-box">
+          <div class="options-container">
+            <div class="option">
+              <input type="radio" class="select" id="M" name="category"/>
+              <label for="M">명륜 캠퍼스</label>
+            </div>
+            <div class="option">
+              <input type="radio" class="select" id="Y" name="category" />
+              <label for="Y">율전 캠퍼스</label>
+            </div>
+          </div>
+          <div class="selected">
+            카테고리 선택
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="검색..." />
+          </div>
+        </div>
+
+        <h2>건물 선택</h2>
+        <div class="select-box">
+          <div class="options-container">
+            <div class="option">
+              <input type="radio" class="select" id="M" name="category"/>
+              <label for="M">명륜 캠퍼스</label>
+            </div>
+            <div class="option">
+              <input type="radio" class="select" id="Y" name="category" />
+              <label for="Y">율전 캠퍼스</label>
+            </div>
+          </div>
+          <div class="selected">
+            카테고리 선택
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="검색..." />
+          </div>
+        </div>
+
+        <h2>물품 종류 선택</h2>
+        <div class="select-box">
+          <div class="options-container">
+            <div class="option">
+              <input type="radio" class="select" id="M" name="category"/>
+              <label for="M">명륜 캠퍼스</label>
+            </div>
+            <div class="option">
+              <input type="radio" class="select" id="Y" name="category" />
+              <label for="Y">율전 캠퍼스</label>
+            </div>
+          </div>
+          <div class="selected">
+            카테고리 선택
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="검색..." />
+          </div>
+        </div>
+
+        <h2>물품 색상 선택</h2>
+        <div class="select-box">
+          <div class="options-container">
+            <div class="option">
+              <input type="radio" class="select" id="M" name="category"/>
+              <label for="M">명륜 캠퍼스</label>
+            </div>
+            <div class="option">
+              <input type="radio" class="select" id="Y" name="category" />
+              <label for="Y">율전 캠퍼스</label>
+            </div>
+          </div>
+          <div class="selected">
+            카테고리 선택
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="검색..." />
+          </div>
+        </div>
+
+        <h2>분실 일자</h2>
+        <div class="select-box">
+          <div class="options-container">
+            <div class="option">
+              <input type="radio" class="select" id="M" name="category"/>
+              <label for="M">명륜 캠퍼스</label>
+            </div>
+            <div class="option">
+              <input type="radio" class="select" id="Y" name="category" />
+              <label for="Y">율전 캠퍼스</label>
+            </div>
+          </div>
+          <div class="selected">
+            카테고리 선택
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="검색..." />
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <button class="new_next" onclick="location.href='new_lost_1.html'"> 다음 </button>
+    <script src="../modified/new.js"></script>
+</body>
+</html>
