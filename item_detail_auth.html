@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKKUSIL_검색_개인습득</title>
+    <link rel="stylesheet" href="./css/item_detail_auth.css">
+    <script src="https://kit.fontawesome.com/4b8f423cbe.js" crossorigin="anonymous"></script> <!--폰트 cdn-->
+</head>
+<body>
+    <!--뒤로가기 버튼-->
+
+    <!--header-->
+    <div class="header">
+        <div class="back">
+            <button onclick="history.back()"><i class="fa fa-chevron-left"></i></button>
+        </div>
+        <h2>분실물 게시판</h2>
+    </div>
+    <div class="item_detail_content">
+        <div class="item_detail_img">
+            <img src="./imgs/ex4.jpeg">
+        </div>
+        <div class="item_detail_box">
+            <h1 class="item_detail_name">
+                멋쟁이 뿔테 안경
+            </h1>
+            <h2 class="item_detail_registerDate">
+                등록일 : 2021.07.20
+            </h2>
+            <div class="item_detail_category_logo">
+                <div class="item_detail_category_logo_parent">
+                    <div class="item_detail_category_campus" style="background-image: url(./imgs/logo2.jpg);">
+                    </div>
+                    <div class="item_detail_category_location" style="background-image: url(./imgs/location.png);">
+                    </div>
+                    <div class="item_detail_category_category" style="background-image: url(./imgs/tag.png);">
+                    </div>
+                    <div class="item_detail_category_color" style="background-image:url(./imgs/color.png);">
+                    </div>
+                </div>
+            </div>
+            <div class="item_detail_category_exp">
+                <div class="item_detail_category_exp_parent">
+                    <div class="item_detail_category_exp_campus"> 명륜캠퍼스 </div>
+                    <div class="item_detail_category_exp_location"> 경영관 </div>
+                    <div class="item_detail_category_exp_category"> 기타 </div>
+                    <div class="item_detail_category_exp_color"> 회색 </div>
+                </div>
+            </div>
+            <h2 class="item_detail_lostDate">
+                분실일 : 2021.07.17
+            </h2>
+            <h2 class="item_detail_lostDetailLoca">
+                분실 세부장소 : 3층 화장실
+            </h2>
+            <p class="item_detail_lostExp">
+                17일에 경영관 3층 화장실에서 세수를 하다가
+                안경을 챙기지 못하고 그냥 나왔습니다ㅠㅠ<br><br>
+                안경을 잃어버려서 공부를 못하는 중입니다ㅠㅠ 혹시 습득하신분 계시면 꼭 연락 부탁드려요!
+            </p>
+            <button id="item_detail_modify"> 수정하기 </button>
+            <button id="item_detail_delete"> 삭제하기 </button>
+        </div>
+    </div>
+
+    <nav class="navbar"> <!--하단 네비게이션바-->
+        <ul class="mobile_list"> <!--폰트(font awesome cdn 활용)-->
+            <li><a href="new.html"><i class="fa fa-plus"></i></a></li>
+            <li><a href="search.html"><i class="fa fa-search" style="color: rgb(141, 198, 63);"></i></a></li>
+            <li><a href="index.html"><i class="fa fa-home" id="home"></i></a></li>
+            <li><a href="noti.html"><i class="fa fa-bell"></i></a></li>
+            <li><a href="login.html"><i class="fa fa-user"></i></a></li>
+        </ul>
+    </nav>
+</body>
+</html>
