@@ -92,7 +92,7 @@
 
         /*기본정보 아래 - '내 분실물&습득물' 타이틀 텍스트*/
         .mypage-top-area{
-            background:rgba(57, 57, 226, 0.959);
+            background: #1565c0;
             font-size: 15px;
             text-align: center;
             color: #fff;

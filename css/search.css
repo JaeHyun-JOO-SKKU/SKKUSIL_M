@@ -75,7 +75,9 @@
         }
             /*게시판 설명*/
         .content_container p{
+            margin: auto;
             font-size: 14px;
+            width: 70%;
         }
             /*습득물 게시판*/
         .content_container .found_info {
@@ -88,8 +90,9 @@
             margin-bottom:80px;
         }
             /*게시판 - 텍스트 설명 부분*/
-        .found_text, .lost_text{
-            width:80%;
+        .found_text,
+        .lost_text{
+            width:100%;
             margin: auto;
         }
             /*게시판 - 이미지 부분*/
@@ -98,6 +101,8 @@
         }
         .content_container img{
             width: 80%;
+            height: 200px;
+            overflow: hidden;
             border: 2px rgb(141, 198, 63) solid;
             border-radius: 1.5rem;
         }
